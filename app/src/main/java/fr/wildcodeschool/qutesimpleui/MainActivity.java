@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 String congratulation = Congratulation.getText().toString();
 
                 if ((firstName.length() == 0 || (lastName.length() == 0))) {
-                    Toast.makeText(MainActivity.this, "Please fill your Firstname and Lastname!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please fill your firstName and lastName!", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     String message = ("Congratulation" + " " + firstName + " " + lastName);
