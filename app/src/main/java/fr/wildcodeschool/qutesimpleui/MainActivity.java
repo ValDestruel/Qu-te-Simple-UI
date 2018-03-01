@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonLogin = findViewById(R.id.button_login);
+        final Button buttonLogin = findViewById(R.id.button_login);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,9 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 if (isChecked) {
                     editFirstName.setEnabled(true);
                     editLastName.setEnabled(true);
+                    buttonLogin.setEnabled(true);
                 } else {
                     editFirstName.setEnabled(false);
                     editLastName.setEnabled(false);
+                    buttonLogin.setEnabled(false);
                 }
             }
         });
